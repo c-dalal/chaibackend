@@ -1,0 +1,6 @@
+backend files khud se reload nahi hoti
+jaise ki react mein hota hai 
+react mein hot reloading hoti hai 
+jiski vgha se sb kuch reload ho jata hai jaise hi code mein changes hote hai toh
+
+backend ke liye nodemon use hota hai
