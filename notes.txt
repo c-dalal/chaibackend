@@ -4,3 +4,20 @@ react mein hot reloading hoti hai
 jiski vgha se sb kuch reload ho jata hai jaise hi code mein changes hote hai toh
 
 backend ke liye nodemon use hota hai
+
+echo "# chaibackend" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/c-dalal/chaibackend.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/c-dalal/chaibackend.git
+git branch -M main
+git push -u origin main
+
+
+video 4:
+video 5:
+first question to ask yourself is ki data kya store krne wale hai
