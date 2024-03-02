@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose,{Schema} from "mongoose";
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 
@@ -49,7 +49,7 @@ const userSchema = new mongoose.Schema({
 
 userSchema.pre("save",async function(next){// yha 2nd parameter mein call back function ko () => {} nahi likhna hai proper function keyworjd se define krna hai
     if(!this.isModified("password")) return next(); // agar modified nahi hai toh next ka flag pass kr do. isModified mein string mein hi pass krna hota hai
-    this.password = bcrypt.hash(this.password,10)
+    this.password = await bcrypt.hash(this.password,10)
     next()
 })
 
